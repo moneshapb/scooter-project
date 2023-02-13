@@ -1,4 +1,4 @@
-const Scooter = require('../src/Scooter').default
+const Scooter = require('../src/Scooter')
 const User = require('../src/User')
 
 //typeof scooter === object
@@ -7,7 +7,7 @@ describe('scooter object', () => {
     // edit this to be a real test!
     let station = "waterloo";
     let scooter = new Scooter(station);
-    expect(scooter).toHaveProperty("station", "wateraloo");
+    expect(scooter).toHaveProperty("station", "waterloo");
     expect(scooter).toHaveProperty("user", null);
     expect(scooter).toHaveProperty("serial", 1);
     expect(scooter).toHaveProperty("charge", 100);
@@ -46,7 +46,7 @@ test("check scooter is fully charged", () => {
   let scooter = new Scooter(station);
   scooter.recharge() 
   expect(scooter.charge).toBe(100)
-  expect(scooter.recharge()).toBe("Scooter is now fully charged")
+expect(scooter.recharge()).toBe("Scooter is now fully charged")
 });
 //request repair method
 test("check scooter is broken", () => {
